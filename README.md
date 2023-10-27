@@ -1,6 +1,11 @@
 # Database Merge Script
 
-This script helps merge data from one database to another, focusing on the `users`, `contacts`, and `identities` tables. The primary use-case is for merging user-related data between two instances of a web application.
+This script merges data from one Roundcube database to another, focusing on the `users`, `contacts`, `collected_addresse` and `identities` tables. The primary use-case is for merging multiple roundcube installations database into a single one.
+
+By default the script will set `mail_host` under the users table to mail.site.tld where site.tld is the domain name. It's important that you change this record to match the mail server for the user. For example to change mail host to localhost for all merged users replace the following line
+`mail_host = "mail." + user['username'].split('@')[1]`
+with
+`mail_host = localhost`
 
 ## Prerequisites
 
