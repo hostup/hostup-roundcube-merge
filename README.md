@@ -65,7 +65,3 @@ Monitor the console output for any errors or issues.
 ## Warning
 
 :warning: This script directly modifies the databases. Before using it, make sure to **take a backup** of both databases. Always test the script on a non-production or staging environment before applying it to live data.
-
----
-
-I hope that clarifies how the script handles user ID remapping. Would you like further changes or additions?
