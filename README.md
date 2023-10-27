@@ -1,4 +1,4 @@
-# Database Merge Script
+# Roundcube Database Merge Script
 
 This script merges data from one Roundcube database to another, focusing on the `users`, `contacts`, `collected_addresse` and `identities` tables. The primary use-case is for merging multiple roundcube installations database into a single one.
 
