@@ -28,8 +28,8 @@ mail_host = "localhost"
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/hostup/roundcube-merge.git
-   cd roundcube-merge
+   git clone https://github.com/hostup/hostup-roundcube-merge.git
+   cd hostup-roundcube-merge
    ```
 
 2. **Set up the database configurations:** Open `merge.py` in your preferred text editor and edit the `config_db1` and `config_db2` dictionaries at the bottom of the script:
