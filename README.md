@@ -1,6 +1,6 @@
 # Roundcube Database Merge Script
 
-This script merges data from one Roundcube database to another, focusing on the `users`, `contacts`, `collected_addresses`, and `identities` tables. The primary use-case is for merging multiple Roundcube installations databases into a single one.
+This script merges data from one Roundcube database to another, focusing on the `users`, `contacts`, `collected_addresses`, `identities`, `contactgroupmembers`, and `contactgroups` tables. The primary use-case is for merging multiple Roundcube installations databases into a single one.
 
 One of the significant challenges in merging databases is handling conflicts, especially with unique identifiers such as user IDs. This script addresses this by **remapping user IDs** from the source database (`db1`) to the destination database (`db2`). When a user from `db1` is inserted into `db2`, a new user ID is generated. A mapping between the old and new user IDs is maintained to ensure that related records (like contacts and identities) are linked to the correct user in the merged database.
 
